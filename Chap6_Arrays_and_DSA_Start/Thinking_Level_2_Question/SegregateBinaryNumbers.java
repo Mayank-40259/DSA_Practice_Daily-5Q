@@ -37,6 +37,7 @@ public class SegregateBinaryNumbers {
         // }   
 
         // method -03 from two pointers technique.
+        // method three is not best in some special condition 
         int n = arr.length;
         int i = 0;
         int j = n - 1;
