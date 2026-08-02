@@ -17,21 +17,21 @@ public class AddingOneToArray {
     Vector<Integer> addOne(int[] arr) {
         // code here
         Vector<Integer> ans = new Vector<>(); 
-        int n = arr.length;
+        int n = arr.length; //3 //4
         int carry = 1;
         for(int i = n - 1; i >= 0; i--){
             if(arr[i] + carry <= 9){
-                ans.add(arr[i]+carry);
-                carry = 0;
+                ans.add(arr[i]+carry); // 8 + 1 = 9 last element.7 + 0 = 7, 6 + 0 = 6, 5 + 0 = 5 -->  [9,7,6,5]. with carry = 0;
+                carry = 0;             // carry hogi zero. dusre iteration loop ke liye.
             }
             else{   // arr[i] + carry = 10; --> 0 niche likhte the 1 carry hota tha.
-                ans.add(0);
-                carry = 1;
+                ans.add(0); // store in ans arraylist --> [0, 0, 0]; with carry = 1;  dusre iteration loop ke liye.
+                carry = 1;  // hamne carry ko 1 kr diya hai, kyuki 10 ho gaya tha.
             }
         }
-        if(carry == 1) ans.add(1);
-        Collections.reverse(ans);
-        return ans;
+        if(carry == 1) ans.add(1);  // [0,0,0,1] --> ans arraylist me 1 add kr diya hai, kyuki last me carry 1 bacha hua tha. 
+        Collections.reverse(ans);  //reverse hoga pura arraylist ans.
+        return ans;  //because of integer datatype.
     }
 
     public static void printArray1(int[] arr){
@@ -54,10 +54,10 @@ public class AddingOneToArray {
 
         AddingOneToArray obj = new AddingOneToArray();
         Vector<Integer> ans = obj.addOne(arr);
-        System.out.println("After Adding One To Array is : " +ans);
+        System.out.println("After Adding One To Array is : " +ans); // 1, 0 , 0 , 0.
 
 
-        System.out.println();
+      //  System.out.println();
 
 
         // Second Array :-
@@ -69,7 +69,8 @@ public class AddingOneToArray {
         System.out.println();
 
         Vector<Integer> ans1 = obj.addOne(arr1);
-        System.out.println("After Adding One To Array is : " +ans1);
+        System.out.println("After Adding One To Array is : " +ans1); // 5, 6, 7, 9.
+        
     }
 }
 
