@@ -13,6 +13,7 @@ public class AddingSumOfArraysInToOne {
         Scanner sc = new Scanner(System.in);
 
 
+        // First Array : -
         System.out.print("Enter the size of First array : ");
         int m = sc.nextInt();
         int[] arr1 = new int[m];
@@ -27,6 +28,8 @@ public class AddingSumOfArraysInToOne {
 
         System.out.println();
 
+
+        // Second Array : -
         System.out.print("Enter the size of Second Array : ");
         int n = sc.nextInt();
         int[] arr2 = new int[n];
@@ -47,15 +50,16 @@ public class AddingSumOfArraysInToOne {
         int p = arr1.length + arr2.length;
         int[] arr = new int[m + n];
 
-        
+
+        // Loop to assign the value in one resultant array.
         for(int i = 0; i < m; i++){
             arr[i] = arr1[i];
         }
-
         for(int i = 0; i < n; i++){
             arr[m + i] = arr2[i];
         }
 
+        // Printing array 
         for(int ele : arr){
             System.out.print(ele + " ");
         }
