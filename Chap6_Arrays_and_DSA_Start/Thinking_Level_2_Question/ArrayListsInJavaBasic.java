@@ -22,6 +22,7 @@ public class ArrayListsInJavaBasic {
         arr.add(5); // third 3 index pr hai 5.
         arr.add(10); // fourth 4 index pr hai 10.
 
+        // isme size dene ki zarurat nahi hai, ye apne aap size ko increase kar lega.
 
        // System.out.println(arr[2]); //yahan pr ye bhi kaam nahi karta hai. --> ye kaam nahi hota hai yahan pr.
        System.out.println(arr.get(2)); // arr[2] // ye kaam hota hai yahan pr.
@@ -37,7 +38,7 @@ public class ArrayListsInJavaBasic {
 
 
     for(int i = 0; i < n; i++){
-        System.out.print(arr.get(i) + " "); // loop se bhi km kr sakte hai array ko 
+        System.out.print(arr.get(i) + " "); // loop se bhi kam kr sakte hai array ko 
     }
 
     System.out.println();

@@ -6,6 +6,8 @@ public class Merge2SortedArrays {
 
     // Program 30). :- merge 2 sorted arrays in a single big array.
 
+    //Part 1 of Ques 24. 
+
     // Question 24). :- Merge two-(2) Sorted Arrays. 
     // logic --> arr1 and arr2 ko jodo ek array me and fir sor kr do 
     // pure array ko ya sath hi saath me sort karte jaao pure array ko.

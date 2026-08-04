@@ -33,6 +33,7 @@ public class WaveArray {
         int[] arr1 = {2, 4, 7, 8, 9, 10, 20};
 
         // Array 1 :-
+        
         System.out.print("Before Wave Array is : ");
         for(int ele : arr){
             System.out.print(ele + " ");
